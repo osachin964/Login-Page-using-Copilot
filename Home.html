@@ -1,0 +1,197 @@
+<!--Create a Login page with HTML CSS Bootstrap And Javascript-->
+<!DOCTYPE html>
+<html>
+<head>
+<title> Restaurant Application </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--Add Font Awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Add External JavaScript file of type text/javascript-->
+<script src="Home.js"></script>
+<style>
+body {
+  
+    background-image: url("https://i.pinimg.com/564x/d5/34/ee/d534ee79a5ee9d072edd5d278ff5fd33.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #cccccc;
+}
+
+.container {
+    padding: 50px;
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* container-fluid text-center */
+footer {
+    margin-top: 100px;
+    
+    background-color: #555;
+    color: white;
+    padding: 5px;
+    
+}
+
+/* Social Media Buttons */
+.btn-social-icon {
+    color: #fff;
+    opacity: 0.8;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+.btn-social-icon:hover {
+    opacity: 1;
+}
+
+.btn-social-icon.btn-facebook {
+    background-color: #3b5998;
+
+}
+
+.btn-social-icon.btn-twitter {
+    background-color: #55acee;
+}
+
+.btn-social-icon.btn-google {
+    background-color: #dd4b39;
+}
+
+.btn-social-icon.btn-linkedin {
+    background-color: #007bb6;
+}
+
+.btn-social-icon.btn-youtube {
+    background-color: #bb0000;
+}
+
+.btn-social-icon.btn-instagram {
+    background-color: #125688;
+}
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<!--Add Navbar-->
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+    <a class="navbar-brand" href="#">Restaurant Application</a>
+</div>
+<ul class="nav navbar-nav">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+
+</ul>
+</div>
+</nav>
+<div class="container">
+<h2>Login Form</h2>
+<form name="myForm" action="Restaurant.html" onsubmit="return validateForm()" class="login">
+    <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd">
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Login</button>
+    
+
+</div>
+
+
+</form>
+<!--Add Footer with social media contats-->
+<footer class="container-fluid text-center">
+    <p>Follow us on social media</p>
+    <a href="https://www.facebook.com/" class="btn btn-social-icon btn-facebook">
+        <span class="fa fa-facebook"></span>
+    </a>
+    <a href="https://twitter.com/" class="btn btn-social-icon btn-twitter">
+        <span class="fa fa-twitter"></span>
+    </a>
+    <a href="https://www.google.com/" class="btn btn-social-icon btn-google">
+        <span class="fa fa-google"></span>
+    </a>
+    <a href="https://www.linkedin.com/" class="btn btn-social-icon btn-linkedin">
+        <span class="fa fa-linkedin"></span>
+    </a>
+    <a href="https://www.youtube.com/" class="btn btn-social-icon btn-youtube">
+        <span class="fa fa-youtube"></span>
+    </a>
+    <a href="https://www.instagram.com/" class="btn btn-social-icon btn-instagram">
+        <span class="fa fa-instagram"></span>
+    </a>
+
+
+</footer>
+
+</body>
+</html>
+
+
+
+
+
