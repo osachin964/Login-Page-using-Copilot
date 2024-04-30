@@ -12,11 +12,11 @@ function validateForm() {
         alert("Login Unsuccessful");
         return false;
     }
-
+var firstName = '';
    
 }
 
-var firstName = '';
+
 
 var firstName = '';
 
