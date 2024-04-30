@@ -18,7 +18,7 @@ function validateForm() {
 
 var firstName = '';
 
-
+var firstName = '';
 
 
 
